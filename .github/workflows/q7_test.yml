@@ -29,4 +29,5 @@ jobs:
     with:
       image-name: $DOCKERHUB_USERNAME/question7
       tag: latest
+    secrets: inherit 
 
