@@ -17,4 +17,4 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: amitmaman1/question5:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/question5:latest
