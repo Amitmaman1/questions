@@ -1,0 +1,21 @@
+name: nodejs
+on:
+  pull_request
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:    
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: setup nodejs
+        uses: actions/setup-node@v5
+        with:
+          node-version: 18
+      - name: install npm
+        run: npm install
+
+      - name: run npn
+        run: npm run build
+
