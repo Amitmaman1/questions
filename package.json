@@ -1,0 +1,13 @@
+{
+  "name": "questions",
+  "version": "1.0.0",
+  "description": "Test project for CI workflow",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo \"✅ Build step ran successfully!\"",
+    "test": "echo \"No tests defined\" && exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
