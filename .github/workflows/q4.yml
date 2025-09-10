@@ -9,6 +9,8 @@ jobs:
       API_KEY: ${{ secrets.API_KEY }}
     steps:
       - name: mask api key
-        run: echo "::add-mask::$API_KEY"
+        run: |
+          echo "::add-mask::$API_KEY"
       - name: print api key
-        run: 'echo "using api key: $API_KEY'
+        run: | 
+          echo "using api key: $API_KEY"
