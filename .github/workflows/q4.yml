@@ -12,6 +12,6 @@ jobs:
     steps:
       - name: mask api key
         run: echo "::add-mask::$API_KEY"
-        
+      
       - name: print api key
         run: echo "using api key: $API_KEY"
