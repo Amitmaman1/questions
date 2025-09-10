@@ -27,4 +27,5 @@ jobs:
           context: ./python    
           file: ./python/Dockerfile 
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/{{ inputs.image-name }}:${{ inputs.tag }}
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/${{ inputs.image-name }}:${{ inputs.tag }}
+          
