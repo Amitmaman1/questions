@@ -27,7 +27,7 @@ jobs:
     needs: test
     uses: ./.github/workflows/q7_deploy.yml
     with:
-      image-name: ${{ secrets.DOCKERHUB_USERNAME }}/question7
+      image-name: question7
       tag: latest
     secrets: inherit 
 
